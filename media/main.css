@@ -1,0 +1,81 @@
+body {
+	background-color: transparent;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+}
+.left-panel {
+	width: 250px;
+	border-right: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.left-panel .project-list {
+	width: 100%;
+}
+
+.project-list li {
+	width: 100%;
+	display: flex;
+	margin: 3px 0;
+	padding: 4px;
+	align-items: center;
+	cursor: pointer;
+}
+
+.project-list li:hover {
+	background-color: var(--vscode-button-background) !important;
+}
+
+.project-list li img {
+	width: 28px;
+	height: 18px;
+	margin-right: 7px;
+}
+
+.main-panel {
+	width: 100%;
+	padding: 10px;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+}
+
+.location {
+	margin-right: 10px;
+}
+
+.main-panel p {
+	margin: 10px 0;
+}
+
+.main-panel button {
+	margin-top: 10px;
+}
+
+.typescript-checkbox {
+	display: none;
+	align-items: center;
+}
+
+.typescript-checkbox input {
+	margin-left: 7px;
+}
+
+.version-select {
+	display: none;
+}
+
+.version-select select {
+	margin-left: 7px;
+}

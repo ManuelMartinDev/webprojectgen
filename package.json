@@ -1,0 +1,63 @@
+{
+	"name": "webprojectgen",
+	"description": "WebProjectGen - Generate web projects quick",
+	"version": "0.0.1",
+	"publisher": "manumrtf",
+	"icon": "./pictures/resizedlogo.png",
+	"private": true,
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-extension-samples"
+	},
+	"engines": {
+		"vscode": "^1.50.0"
+	},
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onView:WebProjectGen.projectsView"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"views": {
+			"explorer": [
+				{
+					"type": "webview",
+					"id": "WebProjectGen.projectsView",
+					"name": "WebProject Gen"
+				}
+			]
+		},
+		"commands": [
+			
+		],
+		"menus": {
+			"view/title": [
+			
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -w -p ./"
+	},
+	"dependencies": {
+		"nodejs": "0.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^16.4.10",
+		"@types/vscode": "^1.50.0",
+		"@typescript-eslint/eslint-plugin": "^4.16.0",
+		"@typescript-eslint/parser": "^4.16.0",
+		"eslint": "^7.21.0",
+		"typescript": "^4.3.5"
+	}
+}
